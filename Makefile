@@ -4,3 +4,6 @@ server:
 
 browse:
 	firefox localhost:1313
+
+build:
+	hugo

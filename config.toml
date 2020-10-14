@@ -1,9 +1,18 @@
+# Many parts of this file are taken from https://gitlab.com/kaushalmodi/kaushalmodi.gitlab.io/
 baseURL = "https://tyomaiva.github.io"
+Title = "Artem's notes on computer technologies and education"
 theme = "refined"
 
-[Params]
-  tagline = "Заметки Артёма"
+[Author]
+  name = "Artem Ivashko"
 
+[Social]
+  github = "tyomaiva"
+
+[Params]
+  tagline = "Заметки Артёма о компьютерных технологиях и образовании"
+  mainSections = ["posts"]
+  html5_validator = true
   # Go date formats: https://golang.org/pkg/time/#pkg-constants
   dateform = "Mon Jan 2, 2006"
 
@@ -17,26 +26,22 @@ theme = "refined"
 
   themecolorbase = "brown"
 
+  [Params.source]
+    url = "https://github.com/tyomaiva/tyomaiva.github.io"
+    org_dir = "content-org"
+    md_dir = "content"
+    ox_hugo = true
+
+  [[Params.social]]
+    name = "Github"
+    link = "https://github.com/tyomaiva/"
+    relme = true
+
 [markup.goldmark.renderer]
   unsafe = true
 
 
-# [[menu.main]]
-#     url = "/"
-#     name = "Домашняя"
-#     weight = 1
-
-# [[menu.main]]
-#     url = "/posts/"
-#     name = "Блог"
-#     weight = 3
-
-# [[menu.icon]]
-#     url = "https://????"
-#     name = "facebook"
-#     weight = 2
-
-# [[menu.icon]]
-#     url = "https://www.linkedin.com/in/username/"
-#     name = "linkedin"
-#     weight = 4
+[Taxonomies] # [indexes] is obsolete since v0.11
+  category = "categories" # SINGULAR = "PLURAL"
+  tag = "tags"
+  series = "series"

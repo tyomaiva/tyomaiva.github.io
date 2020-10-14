@@ -1,0 +1,4 @@
+* Useful keybindings
+=C-c c h= -- to add a new post
+=C-c C-e H H= -- to export the post at point
+=C-c C-e H A= -- to export all the posts

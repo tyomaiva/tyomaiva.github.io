@@ -1,24 +1,41 @@
-theme = "minimal"
+theme = "refined"
 
-[[menu.main]]
-    url = "/"
-    name = "Домашняя"
-    weight = 1
+[Params]
+  tagline = "Заметки Артёма"
 
-[[menu.main]]
-    url = "/posts/"
-    name = "Блог"
-    weight = 3
+  # Go date formats: https://golang.org/pkg/time/#pkg-constants
+  dateform = "Mon Jan 2, 2006"
 
-[[menu.icon]]
-    url = "https://????"
-    name = "facebook"
-    weight = 2
+  # Set favicons to true only if the following files are present in the project assets/ dir:
+  # - safari-pinned-tab.svg
+  # - manifest.json
+  # - favicon-16x16.png
+  # - favicon-32x32.png
+  # - apple-touch-icon.png
+  favicons = false
 
-[[menu.icon]]
-    url = "https://www.linkedin.com/in/username/"
-    name = "linkedin"
-    weight = 4
+  themecolorbase = "brown"
 
 [markup.goldmark.renderer]
   unsafe = true
+
+
+# [[menu.main]]
+#     url = "/"
+#     name = "Домашняя"
+#     weight = 1
+
+# [[menu.main]]
+#     url = "/posts/"
+#     name = "Блог"
+#     weight = 3
+
+# [[menu.icon]]
+#     url = "https://????"
+#     name = "facebook"
+#     weight = 2
+
+# [[menu.icon]]
+#     url = "https://www.linkedin.com/in/username/"
+#     name = "linkedin"
+#     weight = 4

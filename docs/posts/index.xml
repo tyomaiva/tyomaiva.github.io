@@ -2,15 +2,18 @@
     <channel>
         <title>
             
+                    Posts on
+                
+            
             </title>
-        <link>https://tyomaiva.github.io/</link>
-        <description>Recent content 
+        <link>https://tyomaiva.github.io/posts/</link>
+        <description>Recent content  in Posts
             on </description>
         
         <lastBuildDate>Wed, 14 Oct 2020 16:19:03 +0200</lastBuildDate>
         <generator>Hugo -- gohugo.io</generator>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
-            <atom:link href="https://tyomaiva.github.io/index.xml" rel="self" type="application/rss&#43;xml" />
+            <atom:link href="https://tyomaiva.github.io/posts/index.xml" rel="self" type="application/rss&#43;xml" />
         
             
             <item>

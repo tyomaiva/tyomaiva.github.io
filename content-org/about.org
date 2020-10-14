@@ -1,0 +1,9 @@
+#+HUGO_BASE_DIR: ../
+
+* About
+:PROPERTIES:
+:EXPORT_FILE_NAME: about
+:EXPORT_HUGO_SECTION: ./
+:END:
+
+Добро пожаловать / ласкаво просимо / welcome / welkom.

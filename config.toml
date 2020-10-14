@@ -2,12 +2,12 @@ theme = "minimal"
 
 [[menu.main]]
     url = "/"
-    name = "Home"
+    name = "Домашняя"
     weight = 1
 
 [[menu.main]]
     url = "/posts/"
-    name = "Posts"
+    name = "Блог"
     weight = 3
 
 [[menu.icon]]
@@ -19,3 +19,6 @@ theme = "minimal"
     url = "https://www.linkedin.com/in/username/"
     name = "linkedin"
     weight = 4
+
+[markup.goldmark.renderer]
+  unsafe = true

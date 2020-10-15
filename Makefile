@@ -7,10 +7,8 @@ browse:
 
 build:
 	hugo
-# docs/ is the only non-root folder that GitHub Pages accepts to serve
-	-rm -rf docs/
-	mv public/ docs/
 
+# docs/ is the only non-root folder that GitHub Pages accepts to serve
 relserver: build
 	cd docs/ && python -m SimpleHTTPServer 1313
 

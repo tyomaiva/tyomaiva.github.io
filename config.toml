@@ -1,6 +1,8 @@
 # Many parts of this file are taken from https://gitlab.com/kaushalmodi/kaushalmodi.gitlab.io/
 baseURL = "https://tyomaiva.github.io"
 Title = "Artem's notes on computer technologies and education"
+# docs/ is the only non-root folder that GitHub Pages accepts to serve
+publishdir = "docs"
 theme = "refined"
 
 [Author]
@@ -12,7 +14,9 @@ theme = "refined"
 [Params]
   tagline = "Заметки Артёма о компьютерных технологиях и образовании"
   mainSections = ["posts"]
-  html5_validator = true
+  feedSections = ["posts"]
+  cache_busting = true
+  # html5_validator = true
   # Go date formats: https://golang.org/pkg/time/#pkg-constants
   dateform = "Mon Jan 2, 2006"
 
@@ -40,8 +44,20 @@ theme = "refined"
 [markup.goldmark.renderer]
   unsafe = true
 
-
 [Taxonomies] # [indexes] is obsolete since v0.11
   category = "categories" # SINGULAR = "PLURAL"
   tag = "tags"
   series = "series"
+
+[outputs]
+  home = ["HTML", "RSS", "ATOM", "JF2Feed"] # default = ["HTML", "RSS"]
+  section = ["HTML", "RSS", "ATOM", "JF2Feed"] # posts/atom.xml
+
+# https://gohugo.io/getting-started/configuration/#configure-file-caches
+[caches]
+  [caches.getjson]
+    dir = ":cacheDir/:project"
+    maxAge = "1m"
+  [caches.getcsv]
+    dir = ":cacheDir/:project"
+    maxAge = "1m"
